@@ -17,10 +17,6 @@ import AppRouter from './routers/app.router';
 
 const store = configureStore();
 
-store.dispatch(addExpense({ description: 'Water bill', amount: 300, createdAt: 1000 }));
-store.dispatch(addExpense({ description: 'Gas bill', amount: 200, createdAt: 1250 }));
-store.dispatch(addExpense({ description: 'Rent', amount: 575, createdAt: 19500 }));
-
 const app = (
     <Provider store={store}>
         <AppRouter />
