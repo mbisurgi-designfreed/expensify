@@ -29,4 +29,4 @@ test('should handle onRemove', () => {
 
     expect(history.push).toHaveBeenLastCalledWith('/');
     expect(removeExpense).toHaveBeenLastCalledWith(expenses[0].id);
-})
+});
